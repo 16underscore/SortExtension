@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "sort_extension",
+	"version": "${version}",
+	"name": "Sort Extension",
+	"description": "extension for the sort mod",
+	"authors": [
+		"16_"
+	],
+	"contact": {
+		"sources": "https://github.com/16underscore/SortExtension"
+	},
+	"icon": "assets/sort_extension/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"me.sixteen_.sort_extension.SortExtension"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.14.11",
+		"fabric": "*",
+		"minecraft": "~1.19",
+		"java": ">=17",
+		"sort": ">=1.0.2"
+	}
+}
