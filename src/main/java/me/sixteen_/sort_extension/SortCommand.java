@@ -27,7 +27,7 @@ public class SortCommand {
 	private static Set<String> keys = new HashSet<>();
 
 	static {
-		orders.addAll(List.of("creative", "id"));
+		orders.addAll(List.of("id"));
 		for (char i = 'a'; i < 'z'; i++) {
 			keys.add(String.valueOf(i));
 		}

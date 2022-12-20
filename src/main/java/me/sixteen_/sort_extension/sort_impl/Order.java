@@ -11,7 +11,6 @@ public class Order implements IOrder {
 	@Override
 	public int getOrder(Slot slot) {
 		return switch (order) {
-			case "creative" -> creative(slot);
 			default -> id(slot);
 		};
 	}
@@ -20,11 +19,11 @@ public class Order implements IOrder {
 		this.order = order;
 	}
 
-	private int creative(Slot slot) {
-		return 0;
+	private int id(Slot slot) {
+		return checkOrReturn(slot, Item.getRawId(slot.getStack().getItem()));
 	}
 
-	private int id(Slot slot) {
-		return slot.getStack().isEmpty() ? Integer.MAX_VALUE : Item.getRawId(slot.getStack().getItem());
+	private int checkOrReturn(Slot slot, int order) {
+		return slot.getStack().isEmpty() ? Integer.MAX_VALUE : order;
 	}
 }
