@@ -28,7 +28,7 @@ public class SortCommand {
 
 	static {
 		orders.addAll(List.of("id"));
-		for (char i = 'a'; i < 'z'; i++) {
+		for (char i = 'a'; i <= 'z'; i++) {
 			keys.add(String.valueOf(i));
 		}
 	}
