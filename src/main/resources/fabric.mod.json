@@ -13,7 +13,7 @@
 	"icon": "assets/sort_extension/icon.png",
 	"environment": "client",
 	"entrypoints": {
-		"client": [
+		"sort": [
 			"me.sixteen_.sort_extension.SortExtension"
 		]
 	},
@@ -23,5 +23,10 @@
 		"minecraft": "~1.19",
 		"java": ">=17",
 		"sort": ">=1.0.2"
+	},
+	"custom": {
+		"modmenu": {
+			"parent": "sort"
+		}
 	}
 }
